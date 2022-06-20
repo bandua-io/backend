@@ -9,7 +9,7 @@ require("dotenv/config");
 const app = (0, express_1.default)();
 const port = process.env.DEFAULT_PORT;
 app.listen(port, () => {
-    return console.log(`Express is listening at http://localhost:${port}`);
+    console.log(`Express is listening at http://localhost:${port}`);
 });
 app.use(routes_1.default);
 //# sourceMappingURL=app.js.map
