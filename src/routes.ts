@@ -1,13 +1,18 @@
 import express from 'express'
-import { testHandler } from './handlers/testHandler'
+import { signUpHandler } from './handlers/signUpHandler'
+import { loginHandler } from './handlers/loginHandler'
 
 const router = express.Router()
 
-/* default test route */
 router.get('/', (req, res) => {
-    res.send('Homepage')
+    res.send('Bandua Homepage')
 })
- 
-router.get('/test', testHandler)
+
+router.get('/login', loginHandler) 
+router.get('/signup', signUpHandler)
+
+
+//User
+//router.get('/list_users', listUsers)
 
 export default router
