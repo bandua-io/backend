@@ -1,4 +1,6 @@
 export interface User {
     name: string,
-    career: string
+    email: string,
+    pwd: string,
+    career?: string
 }
